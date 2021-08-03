@@ -12,6 +12,11 @@ int main(int argc, char *argv[])
         exit(1);
     }
 
+    if(!strcmp(argv[1],argv[2])){
+        printf("%s and %s are the same file\n",argv[1],argv[2]);
+        return 0;
+    }
+
     int source,target;
     char buffer[BUFFER_SIZE];
     int actual_len;
